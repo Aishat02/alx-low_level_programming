@@ -19,17 +19,17 @@ int main(void)
 	/* your code goes there */
 	/*To find the last digit find the remainder of the number by dividing n */
 	t = n % 10;
-	if (n < 6 && n != 0)
+	if (n > 5)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, t);
+		printf("Last digit of %d is %d and is greater than 5\n", n, t)g
 	}
-	else if (n > 5)
-	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, t);
-	}
-	else
+	else if (n == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, t);
+	}
+	else if (n < 6 && n != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, t);
 	}
 	return (0);
 }
