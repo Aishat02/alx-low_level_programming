@@ -10,23 +10,26 @@ int main(void)
 
 	for (k = 1; k <= 100; k++)
 	{
+		printf(" ");
 		if (k % 3 == 0 && k % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 			continue;
 		}
 		else if (k % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 			continue;
 		}
 		else if (k % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 			continue;
 		}
-		printf("%d ", k);
+		printf("%d", k);
 	}
-	printf("\n");
+	{
+		printf("\n");
+	}
 	return (0);
 }
