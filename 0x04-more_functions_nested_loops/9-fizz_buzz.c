@@ -1,35 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - entry point for the program
- * Return: always 0 (success)
+ * main - prints Buzz each numbers of 3 and 5.
+ * Return: Always 0.
  */
 int main(void)
 {
-	int k;
+	int n;
 
-	for (k = 1; k <= 100; k++)
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
-		printf(" ");
-		if ((k % 3 == 0) && (k % 5 == 0))
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			printf("FizzBuzz");
-			continue;
+			printf(" FizzBuzz");
 		}
-		else if (k % 3 == 0)
+		else if (n % 3 == 0)
 		{
-			printf("Fizz");
-			continue;
+			printf(" Fizz");
 		}
-		else if (k % 5 == 0)
+		else if (n % 5 == 0)
 		{
-			printf("Buzz");
-			continue;
+			printf(" Buzz");
 		}
-		printf("%d", k);
+		else
+		{
+			printf(" %d", n);
+		}
 	}
-	{
-		printf("\n");
-	}
+	printf("\n");
 	return (0);
 }

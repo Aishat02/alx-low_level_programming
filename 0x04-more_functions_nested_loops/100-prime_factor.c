@@ -7,19 +7,17 @@
  */
 int main(void)
 {
-	long n = 612852475143;
-	int w = 2;
+	long int n, fp;
 
-	for ( ; w <= n; w++)
+	n = 612852475143;
+	for (fp = 2; fp <= n; fp++)
 	{
-		if (n % w == 0)
+		if (n % fp == 0)
 		{
-			n /= w;
-			w--;
+			n /= fp;
+			fp--;
 		}
-		printf("%ld\n", w);
 	}
+	printf("%ld\n", fp);
 	return (0);
 }
-
-
