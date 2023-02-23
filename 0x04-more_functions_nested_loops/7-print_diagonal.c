@@ -11,15 +11,16 @@ void print_diagonal(int n)
 
 	for (t = 0; t < n; t++)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
+		/* loop for diagonal space */
 		for (q = 0; q < t; q++)
 		{
 			_putchar(' ');
 		}
 		_putchar('\\');
+		_putchar('\n');
+	}
+	if (n <= 0)
+	{
 		_putchar('\n');
 	}
 }
