@@ -8,19 +8,14 @@
  */
 void rev_string(char *s)
 {
-	/**
-	 * n: stores the length of the string
-	 * t: loops through n
-	 * c: temp variable used for swapping
-	 */
 	int n, t, c;
-	 n = strlen(s);
 
-	 for (t = 0; t < n / 2; t++)
-	 {
-		 c = s[t];
-		 s[t] = s[n - t - 1];
-		 s[n - t - 1] = c;
-	 }
+	n = strlen(s);
+
+	for (t = 0; t < n / 2; t++)
+	{
+		c = s[t];
+		s[t] = s[n - t - 1];
+		s[n - t - 1] = c;
+	}
 }
-
