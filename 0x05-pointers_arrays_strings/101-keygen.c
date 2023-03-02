@@ -10,19 +10,27 @@
  */
 int main(void)
 {
-	int password = 2772;
-	int i, n;
+	int i = 2772;
+	int n;
 
-	srand(time(NULL));
-
-	for (i = 0; passsword > 122; i++)
+	srand(time(0));
+	while (i)
 	{
-		n = (rand() % 125) + 1;
-		printf("%c", n);
-		password -= n;
+		n = rand() % 100;
+		if (n <= 94)
+			n += 32;
+		else
+			continue;
+		if (i - n == 0)
+		{
+			i -= n;
+			printf("%c", n);
+		}
+		else if (i - n - 32 > 0)
+		{
+			i -= n;
+			printf("%c", n);
+		}
 	}
-
-	printf("%c", password);
-
 	return (0);
 }
