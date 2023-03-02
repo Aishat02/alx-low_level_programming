@@ -10,22 +10,19 @@
  */
 int main(void)
 {
-	char password[11];
-	int i;
+	int password = 2772;
+	int i, n;
 
-	/* prompts the random number generator */
 	srand(time(NULL));
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; passsword > 122; i++)
 	{
-		/* generates a random character from A-Z */
-		password[i] = (char)('A' + (rand() % 26));
+		n = (rand() % 125) + 1;
+		printf("%c", n);
+		password -= n;
 	}
 
-	/* terminate the string */
-	password[10] = '\0';
-
-	printf("%s\n", password);
+	printf("%c", password);
 
 	return (0);
 }
