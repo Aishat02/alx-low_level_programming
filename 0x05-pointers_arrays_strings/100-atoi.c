@@ -8,27 +8,17 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1, res = 0, i = 0;
-    /**
-     * Iterate through the whole string and check for
-     * any + or - signs and if any numbers are present
-     */
-	for (; s[i] != '\0'; i++)
-	{
-		if (s[i] == '-')
-		{
-			sign = -sign;
-		}
-		/**
-		 * If any numbers are present,
-		 * convert them to integers and
-		 * add it to the result
-		 */
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			res = (res * 10) + (s[i] - '0');
-		}
-	}
-    /*Return the result with the sign*/
-	return (sign * res);
+	int sign = 1;
+	unsigned int z = 0;
+
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			z = (z * 10) + (*s - '0');
+		else if (z > 0)
+			break;
+	} while (*s++);
+
+	return (z * sign);
 }
