@@ -1,6 +1,6 @@
-# C
+# C 
 
-> Learning C right now
+https://user-images.githubusercontent.com/99085566/223230942-341e005b-c358-4af4-9471-4dcf3827d312.mp4
 
 ## About
 
