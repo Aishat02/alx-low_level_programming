@@ -2,8 +2,8 @@
 
 /**
  * _strspn - gets the length of a prefix substring
- * @s: memory area pointed to
- * @n: number of bytes
+ * @s: string to be scanned
+ * @accept: string containing the characters to match
  *
  * Return: numbers of bytes in the initail segement of s,
  * which consists only of bytes from accept
@@ -11,6 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int q = 0;
+
 	while (*s)
 	{
 		int a = 0;
@@ -24,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if(a)
+		if (a)
 		{
 			q++;
 		}
