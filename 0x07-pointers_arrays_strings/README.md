@@ -33,4 +33,10 @@ Writes a function that prints the chessboard.
 ## 7. The line of life is a ragged diagonal between duty and desire
 Writes a function that prints the sum of the two diagonals of a square matrix of integers.
 > Prototype: void print_diagsums(int *a, int size);
+## 8. Double pointer, double fun
+Writes a function that sets the value of a pointer to a char.
+> Prototype: void set_string(char **s, char *to);
+## 9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
+Creates a file that contains the password for the crackme2 executable.
+the file contains the exact password, no new line, no extra space
 
