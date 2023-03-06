@@ -1,4 +1,6 @@
-# 0x00-hello_world
+# 0x00-hello_world :grin:
+![new-monster-newm](https://user-images.githubusercontent.com/99085566/223238571-5445f3cc-b8d5-4f53-bfaa-163fa1b75c37.gif)
+
 ## 0. Preprocessor
 Writes a script that runs a C file through the preprocessor and save the result into another file.
 The C file name is saved in the variable $CFILE
