@@ -3,7 +3,7 @@
 /**
  * square - returns the natural square root of a number.
  * @n: input number.
- * @a: iterator.
+ * @i: iterator.
  * Return: square root or -1.
  */
 int square(int n, int i)
