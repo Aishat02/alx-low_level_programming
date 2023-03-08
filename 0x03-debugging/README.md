@@ -1,4 +1,7 @@
 # 0x03-debugging
+
+<img width= 40% src= "https://user-images.githubusercontent.com/99085566/223242107-8ea92d8e-4f82-4bc3-97f9-c2dccdd7efba.jpg" >
+
 > Debugging is the process of finding and fixing errors in software that prevents it from running correctly. 
 ## 0. Multiple mains
 A file named 0-main.c test that the function positive_or_negative() gives the correct output when given a case of 0

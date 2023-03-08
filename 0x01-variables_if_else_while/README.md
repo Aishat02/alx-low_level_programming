@@ -1,4 +1,6 @@
 # 0x01-variables_if_else_while
+![coding](https://user-images.githubusercontent.com/99085566/223240731-078a04fd-e583-473d-b274-b11b509fb6c0.gif)
+
 ## 0. Positive anything is better than negative nothing
 This program assigns a random number to the variable n each time it is executed. 
 The variable n will store a different value every time you run this program

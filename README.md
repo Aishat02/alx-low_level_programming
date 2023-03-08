@@ -1,6 +1,8 @@
-# C
+# C 
 
-> Learning C right now
+
+![ezgif-3-ea868d6252](https://user-images.githubusercontent.com/99085566/223235492-226aa2c9-081b-43af-af2a-ea2d318b181d.gif)
+
 
 ## About
 
