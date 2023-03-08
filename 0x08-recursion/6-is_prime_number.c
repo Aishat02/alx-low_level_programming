@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * is_prime_number - prime number
+ * check_prime -checks for prime number
  *@n: checks the input
- * Return: 1 if input integer is a prime number
- * otherwise return 0
+ *@i: iterator
+ * Return: square root or -1
  */
 
 int check_prime(int n, int i)
@@ -19,7 +19,13 @@ int check_prime(int n, int i)
 					}
 					}
 
-					int is_prime_number(int n)
-					{
-					return (check_prime(n, n / 2));
-					}		
+/**
+ * is_prime_number - prime number
+ *@n: checks the input
+ * Return: 1 if input integer is a prime number
+ * otherwise return 0
+ */
+int is_prime_number(int n)
+{
+	return (check_prime(n, n / 2));
+}
