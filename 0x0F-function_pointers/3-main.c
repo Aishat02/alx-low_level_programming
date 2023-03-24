@@ -1,40 +1,29 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 /**
- * main - check the code for Holberton School students.
- * @argc: argument count.
- * @argv: argument vector.
+ * get_op_func - Selects the correct function to perform
+ *               the operation asked by the user.
+ * @s: The operator passed as argument.
  *
- * Return: Always 0.
+ * Return: A pointer to the function corresponding
+ *         to the operator given as a parameter.
  */
-int main(int argc, char *argv[])
+int (*get_op_func(char *s))(int, int)
 {
-	int a, b;
-	int (*operation)(int, int);
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL},
+	};
 
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	int i = 0;
 
-	if (argv[2][1])
-	{
-		printf("Error\n");
-		exit(99);
-	}
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+		i++;
 
-	operation = get_op_func(argv[2]);
-
-	if (operation == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	printf("%d\n", operation(a, b));
-	return (0);
+	return (ops[i].f);
 }
+
